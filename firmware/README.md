@@ -2,7 +2,7 @@
 
 This directory contains the Arduino firmware and hardware configuration for the RFID and IR sensor-based inventory monitoring system.
 
-## 🛠️ Hardware Requirements
+## Hardware Requirements
 
 *   **Microcontroller**: Adruino Uno R3
 *   **RFID Reader**: MFRC522 (13.56 MHz)
@@ -11,13 +11,13 @@ This directory contains the Arduino firmware and hardware configuration for the 
 *   **Input**: Push Button (Manual Override)
 *   **Miscellaneous**: Breadboard, Jumper Wires.
 
-## 🔌 Wiring Diagram
+## Wiring Diagram
 
 The following diagram illustrates the physical connection between the Arduino Uno and the peripheral modules:
 
 ![Hardware Wiring Diagram](./img/wiring_diagram.png)
 
-## 📌 Pin Mapping
+## Pin Mapping
 
 Based on the [RFID_IR_Monitor_v1.ino](./RFID_IR_Monitor_v1/RFID_IR_Monitor_v1.ino) configuration:
 
@@ -28,7 +28,7 @@ Based on the [RFID_IR_Monitor_v1.ino](./RFID_IR_Monitor_v1/RFID_IR_Monitor_v1.in
 | | MOSI | Pin 11 | SPI Master Out Slave In |
 | | MISO | Pin 12 | SPI Master In Slave Out |
 | | RST | Pin 9 | Reset Pin |
-| | VCC | 3.3V | ⚠️ **DO NOT USE 5V** |
+| | VCC | 3.3V | **DO NOT USE 5V** |
 | | GND | GND | Ground connection |
 | **IR Sensor** | OUT | Pin 2 | Detection signal to microcontroller |
 | | GND | GND | Ground connection |
@@ -39,14 +39,14 @@ Based on the [RFID_IR_Monitor_v1.ino](./RFID_IR_Monitor_v1/RFID_IR_Monitor_v1.in
 | **Push Button** | SIGNAL | (Directly to IR Sensor GND) | Hardware bypass/trigger |
 | | GND | GND | Ground connection |
 
-## 🚀 Features
+## Features
 
 *   **RFID Read/Write**: Supports MIFARE Classic, Ultralight, and NTAG tags for storing item codes (up to 16 characters).
 *   **State-Change Detection**: The IR sensor only sends "MOTION" and "CLEAR" logs on state changes to avoid serial flooding.
 *   **Two-Tone Alarm**: A specialized buzzer pattern to alert the cashier of unauthorized movement.
 *   **Serial Command Interface**: Supports `READ`, `WRITE:<code>`, `PING`, and `BUZZ_TEST` commands.
 
-## 🛠️ Installation
+## Installation
 
 1.  Connect your Arduino Uno to your PC.
 2.  Install the **MFRC522** library via the Arduino Library Manager.

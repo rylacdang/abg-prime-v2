@@ -1,15 +1,15 @@
 # ABG Prime Builders Supplies Inc. - V2
 
-The second iteration of the **Integrated Inventory Management & Security System** for ABG Prime Builders Supplies Inc. This version transitions from a custom MVC framework (V1) to a modern, distributed **N-Tier Architecture** utilizing Laravel 12, Vue.js 3, and dedicated hardware components.
+The second iteration of the **Integrated Inventory Management & Security System** for ABG Prime Builders Supplies Inc. This version transitions from a custom MVC framework (V1) to a modern, distributed **Layered Architecture** utilizing Laravel 12, Vue.js 3, and dedicated hardware components.
 
 ---
 
-### 💻 Version 2 Tech Stack
+### Version 2 Tech Stack
 ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)![Inertia.js](https://img.shields.io/badge/inertia.js-%239B51E0.svg?style=for-the-badge&logo=inertia&logoColor=white)![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 This repository is organized into three main modules:
 
@@ -19,7 +19,7 @@ This repository is organized into three main modules:
 
 ---
 
-## 🔄 Evolutionary Overview (V1 vs V2)
+## Evolutionary Overview (V1 vs V2)
 
 This project represents a significant evolution from the original **[ABG Prime V1](https://github.com/RLASH18/abg-prime-v1)**.
 
@@ -31,14 +31,14 @@ Version 1 was built on a **Custom PHP MVC Framework** for the **Parallel and Dis
 
 ### Version 2 (Software Engineering 1)
 Version 2 expands the scope into a full-stack **Distributed IoT and E-Commerce Ecosystem** as part of the **Software Engineering 1** curriculum.
-*   **Architecture**: Transitioned to an **N-Tier Distributed Architecture** using **Inertia.js** for a Single Page Application (SPA) feel.
+*   **Architecture**: Transitioned to an **Layered Distributed Architecture** using **Inertia.js** for a Single Page Application (SPA) feel.
 *   **Integration**: Added a **Python-based POS Bridge** to handle physical hardware.
 *   **IoT**: Integrated **RFID** for item identification and **IR Sensors** for anti-theft security.
 *   **AI**: Integrated **Google Gemini** for automated customer support and AI-driven **item forecasting** for administrative insights.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 To get the entire system running, you must configure all three layers:
 

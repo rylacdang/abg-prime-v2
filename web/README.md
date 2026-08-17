@@ -4,13 +4,13 @@ The central digital hub for **ABG Prime Builders Supplies Inc.**, designed as a 
 
 ---
 
-### 💻 Tech Stack
+### Tech Stack
 ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)![Inertia.js](https://img.shields.io/badge/inertia.js-%239B51E0.svg?style=for-the-badge&logo=inertia&logoColor=white)
 
 ---
 
-## 🏗️ System Architecture: N-Tier / Multi-Layer
-To ensure high performance and modularity, the system is built with an **N-Tier Architecture**:
+## System Architecture: Layered Architecture
+To ensure high performance and modularity, the system is built with an **Layered Architecture**:
 *   **Presentation Layer**: Reactive Vue.js 3 components via Inertia.js.
 *   **Controller Layer**: Request orchestration.
 *   **Service Layer**: Complex business logic (AI Chat, Item Forecasting, Payments).
@@ -19,62 +19,62 @@ To ensure high performance and modularity, the system is built with an **N-Tier 
 
 ---
 
-## 🛒 Customer Experience (E-Commerce Store)
+## Customer Experience (E-Commerce Store)
 The web system provides a full-featured e-commerce experience for customers to browse and purchase builder supplies.
 
-### 🛍️ Product Browsing & Cart
+### Product Browsing & Cart
 ![Customer Homepage Preview](public/img/customer_homepage.png)
 *   **Dynamic Catalog**: Customers can browse through various categories of builder supplies.
 *   **Smart Shopping Cart**: Add items to the cart, adjust quantities in real-time, and see subtotal calculations instantly.
 
-### 💳 Checkout & Payments
+### Checkout & Payments
 ![Checkout Preview](public/img/checkout.png)
 *   **Flexible Payments**: Supports **Cash on Delivery (COD)** and **Online Payments** (GCash, Bank Transfer via Paymongo). Online transactions are automatically marked as **Confirmed** upon successful payment verification.
 *   **Order Status Tracking**: Customers can monitor the progress of their orders from "Pending" to "Delivered".
 
-### 🤖 Smart Support
+### Smart Support
 ![AI Chat Preview](public/img/ai_chat.png)
 *   **AI Chat Widget**: Powered by **Google Gemini**, providing 24/7 automated assistance for product information and general inquiries.
 *   **Customer-Admin Chat**: Real-time live messaging for direct support from staff.
 
 ---
 
-## ⚙️ Administrative Oversight
+## Administrative Oversight
 A specialized dashboard for business owners to manage the entire lifecycle of the construction supply business.
 
-### 📦 Inventory & Damage Management
+### Inventory & Damage Management
 ![Inventory Admin Preview](public/img/admin_inventory.png)
 *   **Centralized Tracking**: Real-time stock levels synced with sales and deliveries.
 *   **Damage Reporting**: Admins can report damaged items, provide remarks, and set discount percentages. These updates (e.g., discounted "Damaged but Resellable" items) reflect immediately on the customer storefront.
 
-### 🚚 Orders & Fulfillment
+### Orders & Fulfillment
 ![Order Management Preview](public/img/admin_orders.png)
 *   **Full Lifecycle Tracking**: Manage billings, payments, and delivery scheduling.
 *   **Messaging Hub**: Monitor and respond to all customer chat inquiries from a centralized interface.
 
-### 📊 Demand Forecasting
+### Demand Forecasting
 ![Forecast Panel Preview](public/img/forecast_panel.png)
 *   **Item Forecast Panel**: Visualizes **AI-driven** stock demand predictions based on historical data to help admins make informed restocking decisions.
 
 ---
 
-## 🛠️ Configuration & POS Integration
+## Configuration & POS Integration
 For the entire ecosystem to function, specific API keys must be set in the `.env` file.
 
-### 🔌 POS Connection (IMPORTANT)
+### POS Connection (IMPORTANT)
 If you intend to use the **Desktop POS Hardware Bridge**, you **MUST** configure the shared secret:
 1.  Generate a secure key.
 2.  Set `POS_API_SECRET=your_key` in the `web/.env`.
 3.  The POS application will require this exact key to authorize hardware scans and stock adjustments.
 
-### 🔑 Other API Requirements
+### Other API Requirements
 *   `GEMINI_API_KEY`: For AI Chat functionality.
 *   `PAYMONGO_SECRET_KEY` & `PAYMONGO_PUBLIC_KEY`: For online payment processing.
 *   `GOOGLE_CLIENT_ID` & `FB_CLIENT_ID`: For social authentication.
 
 ---
 
-## 📦 Detailed Installation & Setup Guide
+## Detailed Installation & Setup Guide
 
 Following these steps precisely to ensure the administrative system and e-commerce portal are correctly configured.
 

@@ -2,7 +2,7 @@
 
 A Python-based desktop application developed with **Tkinter** that serves as the bridge between the physical hardware (Arduino) and the Laravel web backend. It handles real-time inventory adjustments, security monitoring, and hardware programming.
 
-## 🚀 Key Modules & Page Descriptions
+## Key Modules & Page Descriptions
 
 ### 1. Cashier Dashboard (`app/views/cashier_dashboard.py`)
 ![Cashier Dashboard Preview](./img/dashboard.png)
@@ -26,7 +26,7 @@ A dedicated audit view for warehouse security.
 
 ---
 
-## 🛠️ API & Security Configuration
+## API & Security Configuration
 
 The connection between this POS application and the Laravel website is secured via a shared **X-API-Secret** header.
 
@@ -48,7 +48,7 @@ POS_API_SECRET=your_chosen_secret_key
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 1.  **Navigate to the POS directory**:
     ```bash
@@ -75,7 +75,7 @@ POS_API_SECRET=your_chosen_secret_key
 
 ---
 
-## 🏃 Running the Application
+## Running the Application
 
 1.  **Hardware**: Connect your Arduino Uno (ensure the [Firmware](../firmware/README.md) is uploaded).
 2.  **Network**: Ensure the Laravel web server is running and reachable.
@@ -84,7 +84,7 @@ POS_API_SECRET=your_chosen_secret_key
     python main.py
     ```
 
-## 🏗️ Architecture: Asynchronous Threading
+## Architecture: Asynchronous Threading
 The POS system uses a background **Daemon Thread** architecture to ensure the UI stays responsive:
 *   **Serial Listener**: One thread constantly listens for "MOTION" or "READ" signals from the Arduino.
 *   **API Client**: Each network request to Laravel runs in its own separate thread.
